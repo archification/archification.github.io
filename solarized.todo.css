@@ -197,7 +197,7 @@ html {
     font-size: 16px;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    min-width: 300px;
+    min-width: 350px;
     overflow-x: hidden;
     overflow-y: scroll;
     text-rendering: optimizeLegibility;
@@ -410,7 +410,7 @@ fieldset[disabled] .button {
     padding: 0.5em;
 }
 .panel-tabs a.is-active {
-    border-bottom-color: #4a4a4a;
+    border-bottom-color: #586e75;
     color: #2aa198;
 }
 .panel-block {
