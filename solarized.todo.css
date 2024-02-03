@@ -320,9 +320,9 @@ fieldset[disabled] .button {
 }
 .tag:not(body) {
     align-items: center;
-    background-color: #fdf6e3;
+    background-color: #073642;
     border-radius: 4px;
-    color: #5f5fa5;
+    color: #cb4b16;
     display: inline-flex;
     font-size: 0.75rem;
     height: 2em;
