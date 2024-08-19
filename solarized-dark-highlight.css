@@ -1,0 +1,69 @@
+/* Solarized Dark theme for Highlight.js */
+
+.hljs {
+  background-color: #002b36; /* base03 */
+  color: #839496; /* base0 */
+}
+
+.hljs-comment {
+  color: #586e75; /* base01 */
+}
+
+.hljs-keyword,
+.hljs-selector-tag {
+  color: #268bd2; /* blue */
+}
+
+.hljs-string {
+  color: #2aa198; /* cyan */
+}
+
+.hljs-number {
+  color: #859900; /* green */
+}
+
+.hljs-function {
+  color: #268bd2; /* blue */
+}
+
+.hljs-params {
+  color: #586e75; /* base01 */
+}
+
+.hljs-class {
+  color: #268bd2; /* blue */
+}
+
+.hljs-attr {
+  color: #2aa198; /* cyan */
+}
+
+.hljs-regexp {
+  color: #859900; /* green */
+}
+
+.hljs-link {
+  color: #268bd2; /* blue */
+}
+
+.hljs-tag {
+  color: #586e75; /* base01 */
+}
+
+.hljs-variable {
+  color: #839496; /* base0 */
+}
+
+.hljs-template-variable {
+  color: #2aa198; /* cyan */
+}
+
+.hljs-addition {
+  background-color: #073642; /* base02 */
+  color: #839496; /* base0 */
+}
+
+.hljs-deletion {
+  background-color: #dc322f; /* red */
+  color: #839496; /* base0 */
+}
