@@ -1,0 +1,103 @@
+body {
+  background-color: #002b36; /* base03 */
+  color: #839496; /* base0 */
+  font-family: monospace;
+  line-height: 1.5;
+}
+
+a {
+  color: #268bd2; /* blue */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #839496; /* base0 */
+  text-decoration: underline;
+}
+
+/* Headers */
+
+h1, h2, h3, h4, h5, h6 {
+  color: #268bd2; /* blue */
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Code Blocks */
+
+code {
+  background-color: #073642; /* base02 */
+  color: #839496; /* base0 */
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+
+pre {
+  background-color: #073642; /* base02 */
+  color: #839496; /* base0 */
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+/* Lists */
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 0.5em;
+  border-bottom: 1px solid #002b36; /* base03 */
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+/* Tables */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #002b36; /* base03 */
+  padding: 0.5em;
+}
+
+th {
+  background-color: #073642; /* base02 */
+  color: #839496; /* base0 */
+}
+
+/* Other */
+
+blockquote {
+  background-color: #073642; /* base02 */
+  color: #839496; /* base0 */
+  padding: 1em;
+  border-left: 5px solid #268bd2; /* blue */
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #002b36; /* base03 */
+}
