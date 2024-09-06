@@ -173,20 +173,47 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h2 id="projects"><a class="header" href="#projects">Projects</a></h2>
-<h3 id="webify"><a class="header" href="#webify"><a href="https://github.com/archification/webify">Webify</a></a></h3>
-<h4 id="introduction"><a class="header" href="#introduction">Introduction</a></h4>
+                        <h3 id="webify"><a class="header" href="#webify"><a href="https://github.com/archification/webify">Webify</a></a></h3>
+<h4 id="background"><a class="header" href="#background">Background</a></h4>
+<p>This project started from a desire to share media over the lan.
+Over time, more features were added as I had more ideas and my knowledge grew.
+Now, this project represents my current best attempt at creating a portable web service in Rust.</p>
+<h4 id="features"><a class="header" href="#features">Features</a></h4>
 <ul>
-<li>My current best attempt at creating a portable web service.</li>
 <li>It's just a single exe file.</li>
-<li>If config.toml doesn't exist, generates a default config.</li>
+<li>Generates default files if config is missing.</li>
+<li>Modular routes to specific files.</li>
+<li>SSL with dual-protocol support.</li>
+<li>Inserts media from local directory on a web page with self-made templating code.</li>
 </ul>
 <h4 id="configuration"><a class="header" href="#configuration">Configuration</a></h4>
-<ul>
-<li>ip and scope (local, lan, public)</li>
-<li>mounted web paths</li>
-<li>Paths to html and media files</li>
-</ul>
+<p>Configuration is done with a config.toml file.
+The default config contents can be seen below.</p>
+<pre><code class="language-toml">scope = "localhost"
+ip = "192.168.1.142"
+port = 12345
+ssl_enabled = false
+ssl_port = 12345
+ssl_cert_path = "pems/cert.pem"
+ssl_key_path = "pems/key.pem"
+todo_enabled = true
+todo_scope = "localhost"
+todo_ip = "192.168.1.142"
+todo_port = 11111
+upload_size_limit = 2000000000 # 2 GB (2 * 1000 * 1000 * 1000)
+#upload_size_limit = "disabled" # disables the limit and allows any size (not recommended)
+upload_storage_limit = 2000000000
+browser = false
+
+[routes]
+"/" = ["static/home.html"]
+"/stuff" = ["static/stuff.html", "static/media"]
+"/pdf" = ["static/pdf.html", "static/documents"]
+"/downloads" = ["static/downloads.html", "static/files"]
+"/playlists" = ["static/playlists.html", "static/audio/"]
+"/upload" = ["static/upload.html"]
+"/files" = ["static/uploads.html", "uploads"]
+</code></pre>
 
                     </main>
 
